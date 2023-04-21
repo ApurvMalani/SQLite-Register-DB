@@ -145,20 +145,6 @@ class ThirdClass extends StatefulWidget {
               ElevatedButton(
                 onPressed: () async  {
 
-
-                  setState(() {
-                    UsedataBaseProvider.db.getDatabase();
-
-                    MyHomePageState();
-                  });
-
-
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => const  HomePage()),
-
-                  );
-
                   if (widget.edit == true) {
                     // Update user in database
 
@@ -180,6 +166,13 @@ class ThirdClass extends StatefulWidget {
                     ));
 
                   }
+
+
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const  HomePage()),
+
+                  );
 
                   },
 
