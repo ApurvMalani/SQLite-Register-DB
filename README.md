@@ -1,4 +1,4 @@
-# SQLITE - Login & Register --Modal
+# SQLITE - Login & Register-Modal
 
 A new Flutter project.
 
