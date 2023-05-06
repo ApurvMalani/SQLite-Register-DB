@@ -1,6 +1,5 @@
 import 'package:basic/second_page.dart';
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'errorpage.dart';
 import 'third_page.dart';
 
@@ -157,54 +156,6 @@ class _MyAppState extends State<MyApp> {
               ),
 
             ],
-          ),
-        ),
-      ),
-
-      //   BOTTOM -  NAVIGATION-BAR...... (3)
-
-      bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          color: Colors.black,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
-          ),
-        ),
-        child: ClipRRect(
-          borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20),
-            child: GNav(
-              backgroundColor: Colors.black,
-              color: Colors.white,
-              activeColor: Colors.white,
-              tabBackgroundColor: Colors.grey.shade800,
-              onTabChange: (index) {},
-              padding: const EdgeInsets.all(16),
-              tabs: [
-                GButton(
-                  icon: Icons.looks_one_outlined,
-                  text: 'First-Screen',
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/');
-                  },
-                ),
-                GButton(
-                  icon: Icons.looks_two_outlined,
-                  text: 'Second-Screen',
-                  onPressed: () {},
-                ),
-                GButton(
-                  icon: Icons.looks_3_outlined,
-                  text: 'Third-Screen',
-                  onPressed: () {},
-                ),
-              ],
-            ),
           ),
         ),
       ),
